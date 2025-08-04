@@ -26,10 +26,17 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
       - name: print Name
-        if: github.repository != 'satya1246/github_actions_activities'
+        if: github.repository == 'satya1246/github_actions_activities'
         run: | 
           echo My name is Satya!
           echo My repository name is : ${{github.repository}}
+          echo ${{github.ref}}
+          echo ${{github.sha}}
+          echo ${{github.actor}}
+          echo ${{github.event_name}}
+          echo ${{github.workflow}}
+          echo ${{github.run_id}}
+          echo ${{github.run_number}}
         
 
       # Runs a single command using the runners shell
