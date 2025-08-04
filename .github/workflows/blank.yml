@@ -30,13 +30,13 @@ jobs:
         run: | 
           echo My name is Satya!
           echo My repository name is : ${{github.repository}}
-          echo ${{github.ref}}
-          echo ${{github.sha}}
-          echo ${{github.actor}}
-          echo ${{github.event_name}}
-          echo ${{github.workflow}}
-          echo ${{github.run_id}}
-          echo ${{github.run_number}}
+          echo ref = ${{github.ref}}
+          echo sha = ${{github.sha}}
+          echo actor = ${{github.actor}}
+          echo event_name = ${{github.event_name}}
+          echo workflow= ${{github.workflow}}
+          echo run_id = ${{github.run_id}}
+          echo run number = ${{github.run_number}}
         
 
       # Runs a single command using the runners shell
